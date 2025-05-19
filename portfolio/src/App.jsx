@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact.jsx";
  export default function App(){
   return (
     <>
+      <Navbar/>
       <Home/>
       <About/>
       <Project/>

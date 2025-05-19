@@ -1,7 +1,7 @@
 export default function About(){
     return(
         <section className="relative w-full min-h-screen bg-center bg-cover bg-box bg-no-repeat  flex align-cent justify-center">
-            <div className="text-[#CE9178] opacity-30 text-9xl absolute top-10 left-64 font-mono font-bold">Skill set</div>
+            <div className="text-[#CE9178] opacity-30 text-9xl absolute top-10 left-10 font-mono font-bold">Skill set</div>
             <div className="text-8xl"> </div>
             <div className="absolute left-10"> 
             <img src="public/Assets/React.svg" alt="React-logo" className=" h-48 w-48"/>
@@ -36,3 +36,7 @@ export default function About(){
       
     )
 }
+
+
+
+
