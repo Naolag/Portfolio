@@ -31,6 +31,7 @@ function PrevArrow(props) {
 const data = [
     {
       image: "/Assets/Your-car.jpg",
+      name:"Your-car",
       description:
         "The Porsche 911 is a true icon in the sports car world, known for its sleek design and superior handling.",
       Languages:" React, Taiwlid CSS",
@@ -39,6 +40,7 @@ const data = [
     },
     {
       image: "/Assets/about.png",
+      name:"Your car",
       description:
         "The Porsche 911 is a true icon in the sports car world, known for its sleek design and superior handling.",
       Languages:" React, Taiwlid CSS",
@@ -47,6 +49,7 @@ const data = [
     },
     {
       image: "/Assets/code.jpeg",
+      name:"Your car",
       description:
         "The Porsche 911 is a true icon in the sports car world, known for its sleek design and superior handling.",
       Languages:" React, Taiwlid CSS",
@@ -90,15 +93,17 @@ function Cars() {
           <Slider {...settings}>
             {data.map((d, i) => (
               <div key={i}> {/* This adds spacing between slides */}
-                <div className="h-[500px] border border-gray-300 rounded-lg shadow-lg px-6 py-8 bg-white flex flex-col justify-between">
-                    <div>
-                  <img
-                    src={d.image}
-                    alt={d.name}
-                    className=" h-auto object-contain  rounded-md"
-                  />
-                  </div>
-                  
+                <div className="flex gap-96">
+                    <div className="pl-9">
+                          <img
+                              src={d.image}
+                              className="h-auto max-h-[600px]"/>
+                    </div>
+                    <div className="">
+                        <div className="text-7xl font-serif">
+                            {d.name}
+                            </div>   
+                    </div>
                 </div>
               </div>
             ))}
