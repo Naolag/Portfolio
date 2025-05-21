@@ -14,12 +14,25 @@ export default function About(){
             <div className="absolute left-20 top-80 "> 
             <img src="/Assets/HTML.svg" alt="HTML-logo" className=" h-48 w-48"/>
             </div>
-            <div className="absolute left-96 top-56"> 
+            <div className="absolute top-[25%] left-[30%]"> 
             <img src="/Assets/CSS.svg" alt="Css-logo" className=" h-48 w-48"/>
             </div>
             <div className="absolute left-10 bottom-52 "> 
             <img src="/Assets/JS.png" alt="Javascript-logo" className=" h-32 w-32"/>
             </div>
+            <div className="absolute top-80 left-[53%]"> 
+            <img src="/Assets/redux.svg" alt="Redux-logo" className=" h-48 w-48"/>
+            <p className="text-6xl text-center text-blue-300">Redux</p>
+            </div>
+            <div className="absolute top-32 left-[65%]"> 
+            <img src="/Assets/SQL.svg" alt="Sql-logo" className=" h-40 w-40"/>
+            </div>
+            <div className="absolute left-96 top-44"> 
+            <img src="/Assets/bootstrap.svg" alt="Bootstrap-logo" className=" h-40 w-40"/>
+            <p className="text-4xl text-center text-blue-300">Bootstrap</p>
+            </div>
+
+
 
             <div className="absolute text-slate-900 felex alighn-center justify-center top-[49%] left-[21%] font-mono drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] text-3xl">
                 <p className="text-[#569CD6]">{"Const developer:{"}</p>
