@@ -99,11 +99,7 @@ function Cars() {
                               src={d.image}
                               className="h-auto max-h-[600px]"/>
                     </div>
-                    <div className="">
-                        <div className="text-7xl font-serif">
-                            {d.name}
-                            </div>   
-                    </div>
+                   
                 </div>
               </div>
             ))}
