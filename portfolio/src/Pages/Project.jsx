@@ -1,113 +1,22 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-// Custom Arrow components
-function NextArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute right-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-Custom-red"
-      onClick={onClick}
-    >
-      <ChevronRight size={36} />
+<div className="flex flex-col md:flex-row md:gap-32 items-center justify-center px-4">
+  <div className="w-full md:w-1/2 mb-6 md:mb-0">
+    <img
+      src={d.image}
+      alt={d.name}
+      className="h-auto max-h-[500px] w-full object-contain"
+    />
+  </div>
+  <div className="w-full md:w-1/2">
+    <h3 className="text-3xl md:text-5xl font-serif mb-4 text-Custom-gray">
+      {d.name}
+    </h3>
+    <p className="text-lg text-gray-600 leading-relaxed mb-4">
+      {d.description}
+    </p>
+    <div className="text-sm text-gray-500 font-mono mb-2">Tech: {d.Languages}</div>
+    <div className="flex gap-4 text-sm text-blue-600 underline">
+      <a href={d.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href={d.Link} target="_blank" rel="noopener noreferrer">Live Demo</a>
     </div>
-  );
-}
-
-function PrevArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute left-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-Custom-red"
-      onClick={onClick}
-    >
-      <ChevronLeft size={36} />
-    </div>
-  );
-}
-
-const data = [
-    {
-      image: "/Assets/Your-car.jpg",
-      name:"Your-car",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design and superior handling.",
-      Languages:" React, Taiwlid CSS",
-      github:"gadaef",
-      Link:"fdasdg"
-    },
-    {
-      image: "/Assets/about.png",
-      name:"Your car",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design and superior handling.",
-      Languages:" React, Taiwlid CSS",
-      github:"gadaef",
-      Link:"fdasdg"
-    },
-    {
-      image: "/Assets/code.jpeg",
-      name:"Your car",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design and superior handling.",
-      Languages:" React, Taiwlid CSS",
-      github:"gadaef",
-      Link:"fdasdg"
-    },
-  ];
-
-function Cars() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive:[
-        {
-            breakpoint:720,
-            settings:{
-                slidesToShow:1,
-            }
-        }
-    ]
-  };
-
-  return (
-    <section id="cars" className="px-6 py-10 overflow-x-hidden mb-16">
-      <div>
-        {/* Title */}
-        <div className="relative">
-          <div className="text-5xl md:text-8xl font-lora font-bold text-Custom-gray text-center">
-            Projects
-          </div>
-        </div>
-
-        {/* Slider */}
-        <div className="mt-20 w-full min-w-screen  relative">
-          <Slider {...settings}>
-            {data.map((d, i) => (
-              <div key={i}> {/* This adds spacing between slides */}
-                <div className="flex gap-96">
-                    <div className="pl-9">
-                          <img
-                              src={d.image}
-                              className="h-auto max-h-[600px]"/>
-                    </div>
-                   
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export default Cars;
+  </div>
+</div>

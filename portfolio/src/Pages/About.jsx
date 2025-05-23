@@ -1,20 +1,19 @@
 export default function About(){
     return(
         <section className="relative w-full min-h-screen bg-center bg-cover bg-box bg-no-repeat  flex align-cent justify-center">
-            <div className="text-[#CE9178] opacity-30 text-9xl absolute top-10 left-56 font-mono font-bold">Skill set</div>
-            <div className="text-8xl"> </div>
+           
             <div className="absolute left-10"> 
-            <img src="public/Assets/React.svg" alt="React-logo" className=" h-48 w-48"/>
+            <img src="public/Assets/React.svg" alt="React-logo" className=" h-40 w-40"/>
             <p className="text-6xl text-center text-blue-300">React</p>
             </div>
             <div className="absolute "> 
-            <img src="/Assets/Tailwind.svg" alt="Tailwind-logo" className=" h-48 w-48"/>
-            <p className="text-6xl text-center text-blue-300">Tailwind</p>
+            <img src="/Assets/Tailwind.svg" alt="Tailwind-logo" className=" h-40 w-40"/>
+            <p className="text-5xl text-center text-blue-300">Tailwind</p>
             </div>
             <div className="absolute left-20 top-80 "> 
             <img src="/Assets/HTML.svg" alt="HTML-logo" className=" h-48 w-48"/>
             </div>
-            <div className="absolute top-[25%] left-[30%]"> 
+            <div className="absolute top-[20%] left-[30%]"> 
             <img src="/Assets/CSS.svg" alt="Css-logo" className=" h-48 w-48"/>
             </div>
             <div className="absolute left-10 bottom-52 "> 
@@ -24,13 +23,18 @@ export default function About(){
             <img src="/Assets/redux.svg" alt="Redux-logo" className=" h-48 w-48"/>
             <p className="text-6xl text-center text-blue-300">Redux</p>
             </div>
-            <div className="absolute top-32 left-[65%]"> 
-            <img src="/Assets/SQL.svg" alt="Sql-logo" className=" h-40 w-40"/>
+            <div className="absolute top-32 left-[62%]"> 
+            <img src="/Assets/SQL.svg" alt="Sql-logo" className=" h-36 w-36"/>
             </div>
-            <div className="absolute left-96 top-44"> 
-            <img src="/Assets/bootstrap.svg" alt="Bootstrap-logo" className=" h-40 w-40"/>
+            <div className="absolute left-96 top-28"> 
+            <img src="/Assets/bootstrap.svg" alt="Bootstrap-logo" className=" h-36 w-36"/>
             <p className="text-4xl text-center text-blue-300">Bootstrap</p>
             </div>
+            <div className="absolute right-96 top-44"> 
+            <img src="/Assets/saa.svg" alt="Sass-logo" className=" h-40 w-40"/>
+            </div>
+           
+            
 
 
 
