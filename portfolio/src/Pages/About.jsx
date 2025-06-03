@@ -3,7 +3,7 @@ export default function About(){
         <section className="relative w-full min-h-screen bg-center bg-cover bg-box bg-no-repeat  flex align-cent justify-center">
            
             <div className="absolute left-10"> 
-            <img src="public/Assets/React.svg" alt="React-logo" className=" h-40 w-40"/>
+            <img src="/Assets/React.svg" alt="React-logo" className=" h-40 w-40"/>
             <p className="text-6xl text-center text-blue-300">React</p>
             </div>
             <div className="absolute "> 
