@@ -33,7 +33,7 @@ const data = [
     description:
       "YourCar is a sleek, high-end car dealership website built to give users a premium browsing experience. With a luxurious UI and smooth navigation, it helps customers find their dream ride effortlessly. From showcasing exotic cars to clear CTAs like “Discover,” it blends aesthetics with functionality. Whether you're hunting for a budget car or a beast on wheels, YourCar has you covered.",
     Languages: "React, Tailwind CSS",
-    github: "https://github.com/gadaef",
+    github: "https://github.com/Naolag/Chauffeur.git",
     Link: "https://682a20111e1b00956ed68e72--yourcareapp.netlify.app/",
   },
   {
@@ -49,7 +49,7 @@ const data = [
       "🧠 Responsive UI: Designed with mobile-first principles and clean UX in mind.",
     ],
     Languages: "React, Tailwind CSS",
-    github: "https://github.com/gadaef",
+    github: "https://github.com/Naolag/Fitness_tracker.git",
     Link: "https://fitness-tracker-o1cv.vercel.app",
   },
 ];
@@ -76,8 +76,8 @@ function Cars() {
 
   return (
     <section
-      id="cars"
-      className="px-6 py-10 min-h-[10%] overflow-x-hidden mb-16"
+      id="project"
+      className="px-6 py-10 min-h-[10%] overflow-x-hidden mb-16 "
     >
       <div>
         {/* Title */}
@@ -104,11 +104,11 @@ function Cars() {
 
                   {/* Info */}
                   <div className="md:w-1/2 w-full">
-                    <h3 className="text-4xl font-serif mb-4 text-Custom-gray">
+                    <h3 className="text-3xl md:text-4xl  font-serif mb-4 text-Custom-gray">
                       {d.name}
                     </h3>
 
-                    <p className="text-lg text-gray-700 leading-relaxed">
+                    <p className="text-sm md:text-lg  text-gray-700 leading-relaxed">
                       {d.description}
                     </p>
 
